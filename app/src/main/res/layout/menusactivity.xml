@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenusActivity"
+    android:weightSum="4"
+    android:background="@drawable/bg"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/imagView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/grid" />
+
+        <TextView
+            android:id="@+id/textgird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="-91dp"
+            android:layout_marginTop="90dp"
+
+            android:layout_toStartOf="@+id/imagView"
+            android:text="Gird Layout"
+            android:textColor="#123"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:columnCount="2"
+        android:padding="10dp"
+        android:rowCount="4"
+
+        >
+
+        <Button
+            android:id="@+id/Createbuttonaccount"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text="Create Account"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/accountbutton"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=" Account"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonAPI"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text="other API "
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonsetting"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text="API Rest"
+            android:textSize="18sp" />
+
+    </GridLayout>
+
+</LinearLayout>
